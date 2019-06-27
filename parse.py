@@ -2,6 +2,9 @@
 # vim:fileencoding=utf-8
 
 def parseStringAdi (string):
+	"""
+	This function recieving string from adi-file, and parse it. Function returning result in Phyton dictionary type, where key - it key from ADI-tag, 		value - information from ADI
+	"""
 #print(len(string.decode('utf-8')))
 	counter=0
 	name=''
