@@ -41,10 +41,10 @@ def parseStringAdi (string):
 
 ## For example using string			
 string='<CALL:5>UR4LGA<NAME:6>Sergey<RST:2>599'
-## call prase function
-tags=parseStringAdi(string)
+## call parse function
+tags=parseStringAdi(string) # function return Python-dictionary 
 ## Example result out in console		
-print('Name: '+tags.get('NAME')+ '\nCall: '+ tags.get('CALL')+'\nRS:' + tags.get('RST'))
+print('Name: ' + tags.get('NAME') + '\nCall: ' + tags.get('CALL') + '\nRS:' + tags.get('RST'))
 
 
 		
