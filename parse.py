@@ -2,9 +2,7 @@
 # vim:fileencoding=utf-8
 
 def parseStringAdi (string):
-#print(len(string.decode('utf-8')))
 	counter=0
-	
 	name=''
 	digitInTagString=''
 	digitInTagDigit=0
@@ -24,7 +22,6 @@ def parseStringAdi (string):
 						digitInTagString=digitInTagString+string[counterChar]
 						counterChar=counterChar+1
 						digitInTagDigit=int(digitInTagString)
-				
 			while  string[counterChar]!='<'  :
 					if string[counterChar]!=">": 
 							inTag=inTag+string[counterChar]
